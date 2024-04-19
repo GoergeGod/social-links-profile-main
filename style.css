@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/**
+- Mobile: 375px
+- Desktop: 1440px
+
+**/
+
+:root{
+    --Fuente_Principal: "Inter", sans-serif;
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark_Grey: hsl(0, 0%, 12%);
+    --Off_Black: hsl(0, 0%, 8%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 14px;
+    font-family: var(--Fuente_Principal);
+    background-color: var(--Off_Black);
+}
+
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h2,
+p,
+span{
+    color: var(--White);
+}
+
+
+.contenedor-principal{
+    background-color: var(--Dark_Grey);
+    max-width: 50rem;
+    margin: 20rem auto;
+    border-radius: 2%;
+    padding: 5rem;
+}
+
+img{
+    border-radius: 50%;
+    width: 9rem;
+    height: auto;
+}
+
+.contenedor-header{
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-header h2{
+    font-weight: 500;
+    margin-bottom: 0%;
+}
+
+.contenedor-header span{
+    color: var(--Green);
+    font-weight: 600;
+}
+
+.contenedor-header p:last-child{
+    margin: 4rem 0;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+/** Body **/
+
+
+.enlaces a{
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--Grey);
+    align-items: center;
+    border: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+.enlaces a:hover{
+    color: var(--Off_Black);
+    background-color: var(--Green);
+}
